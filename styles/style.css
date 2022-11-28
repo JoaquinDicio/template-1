@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+/* VARIABLES */
+
+:root{
+    --blue:#022d46;
+    --yellow:#f5c901;
+    --grey:#1d1d1d;
+}
+
+/* HEADER */
+header.header {
+    padding: 20px 35px;
+    background-color:transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+div.header-inside-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+button#menu-btn{
+    background-color:transparent;
+    border:2px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: 500;
+}
+button#menu-btn:hover{
+    background-color: var(--yellow);
+    color:#ffff;
+}
+header h1.brand {
+    margin-right: 20px;
+    color: var(--grey);
+}
+
+nav.navbar {
+    animation-name: showMenu;
+    animation-duration: .5s;
+    overflow: hidden;
+}
+
+nav li.nav-item {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #ffff;
+    text-transform: uppercase;
+}
+nav li.nav-item:hover{
+    color: var(--yellow);
+    transition: .25s;
+}
+button.btn-contact{
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .85em;
+    color: var(--blue);
+    border-radius: 5px;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+button.btn-contact:hover{
+    background-color: transparent;
+    color: var(--yellow);
+    transition: .3s;
+}
+/* HOME */
+div.bg-op{
+    background-color: #022d46b8;
+    height: 100%;
+}
+div.bg-op.home{
+    height: 100vh;
+}
+div.bg-img{
+    background-image: url('https://img.freepik.com/fotos-premium/vista-frontal-macho-mecanico-trabajando_23-2148327536.jpg?w=2000');
+    background-size: cover;
+    background-attachment: fixed;
+}
+ h2.home-title{
+    max-width: 600px;
+    font-size: 3rem;
+    font-style: italic;
+ }
+ p.home-text{
+    max-width: 400px;
+    margin: 40px auto;
+    font-size: 1.1rem;
+ }
+ button.btn-home{
+    border-radius: 5px;
+    padding: 8px 25px;
+    margin: 0 auto;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #ffff;
+    border: 2px solid #ffff;
+    background-color: transparent;
+ }
+ button.btn-home:hover{
+    background-color: #ffff;
+    color: var(--grey);
+ }
+
+/* ABOUT US SECTION */
+div.about-container{
+    padding: 70px 40px 50px 40px;
+    position: relative;
+    overflow: hidden;
+}
+div.about{
+    max-width: 1100px;
+    z-index: 1;
+}
+div.inclinated{
+    height: 1500px;
+    position: absolute;
+    width: 600px;
+    top: -750px;
+    left: -200px;
+    z-index: 0;
+    transform: rotate(65deg);
+}
+div.about-images{
+    margin: 0 auto;
+}
+
+div.about-images div.about-img:nth-child(1){
+    background-image: url('https://carrosenusa.com/wp-content/uploads/mecanicos-de-autos-a-domicilio-scaled.jpg');
+    background-position: center;
+}
+div.about-images div.about-img:nth-child(2){
+    background-image: url('https://limasabe.pe/wp-content/uploads/2021/10/talleres-mecanicos-en-lima.jpeg');
+    background-position: center;
+}
+div.about-img{
+    height: 400px;
+    margin-top: 50px;
+    display: inline-block;
+    margin: 5px;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+div.about-info{
+    padding-top: 30px;
+    margin-left:30px;
+}
+div.about-info button{
+    margin-top: 20px;
+}
+
+/* SERVICES SECTION */
+
+div.services-container{
+    padding: 80px 40px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+div.cards-services-container{
+    flex-wrap: wrap;
+    margin-top: 70px !important;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+div.service-card-container{
+    padding: 5px;
+}
+div.service-card{
+    background-color: #ffff;
+    border-radius: 10px;
+    min-height: 210px;
+    height: fit-content;
+    padding: 25px 20px;
+}
+.service-card h5{
+    font-size: 1.1em;
+}
+.service-card p.card-text{
+    font-size: .92em;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+i.card-icon{
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+div.line-services{
+    height: 250%;
+    width: 150px;
+    right: 600px;
+    background-color: var(--yellow);
+    position: absolute;
+    transform: rotate(80deg);
+    z-index: 0;
+}
+
+div.intermediate-section{
+    padding: 50px auto;
+    height:250px;
+    background-image: url('https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/08/taller-mecanico-2789939.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* CONTACT SECTION */
+div.contacto-container{
+    padding: 80px 50px;
+} 
+p.visit-info{
+    max-width: 400px;
+    margin: 30px auto;
+}
+iframe.google-map{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+}
+i.contact-social-icon{
+    font-size: 2.8em;
+    color: #ffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+i.contact-social-icon:hover{
+    transition: .4s;
+    color: var(--yellow);
+}
+
+/* UTILITIES */
+
+div.line-section{
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 90px;
+    margin-top: 5px;
+    height: 4px;
+    background-color: var(--yellow);
+}
+button.yellow-btn{
+    background-color:transparent;
+    border:2px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: 500;
+}
+button.yellow-btn:hover{
+    background-color: var(--yellow);
+    color:var(--grey);
+}
+button.yellow-filled-btn{
+    border: 2px solid var(--yellow);
+    font-weight: 500;
+    color: var(--grey);
+}
+button.yellow-filled-btn:hover{
+    background-color: transparent;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+.yellow{
+    color: var(--yellow);
+}
+.grey{
+    color: var(--grey);
+}
+.bg-yellow{
+    background-color: var(--yellow);
+}
+.bg-grey{
+    background-color:var(--grey) !important;
+}
+.fs-medium {
+    font-size: 2em;
+}
+
+.fw-bold {
+    font-weight: 1000;
+}
+
+.fw-mid {
+    font-weight: 800;
+}
+
+.fw-low {
+    font-weight: 600;
+}
+
+.fw-regular {
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+    div.logo-container {
+        width: 100%;
+    }
+    nav li.nav-item{
+        margin: 5px 0;
+    }
+    div.contact-info{
+        margin-bottom: 100px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes showMenu {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: 90px;
+        }
+    }
+}
