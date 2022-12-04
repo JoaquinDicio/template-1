@@ -82,7 +82,7 @@ div.bg-op.home{
     height: 100vh;
 }
 div.bg-img{
-    background-image: url('https://img.freepik.com/fotos-premium/vista-frontal-macho-mecanico-trabajando_23-2148327536.jpg?w=2000');
+    background-image: url('https://via.placeholder.com/1360x768.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -135,11 +135,11 @@ div.about-images{
 }
 
 div.about-images div.about-img:nth-child(1){
-    background-image: url('https://carrosenusa.com/wp-content/uploads/mecanicos-de-autos-a-domicilio-scaled.jpg');
+    background-image: url('https://via.placeholder.com/250x500.png');
     background-position: center;
 }
 div.about-images div.about-img:nth-child(2){
-    background-image: url('https://limasabe.pe/wp-content/uploads/2021/10/talleres-mecanicos-en-lima.jpeg');
+    background-image: url('https://via.placeholder.com/250x500.png');
     background-position: center;
 }
 div.about-img{
@@ -211,7 +211,7 @@ div.line-services{
 div.intermediate-section{
     padding: 50px auto;
     height:250px;
-    background-image: url('https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/08/taller-mecanico-2789939.jpg');
+    background-image: url('https://via.placeholder.com/1920x300.png');
     background-position: center;
     background-attachment: fixed;
 }
